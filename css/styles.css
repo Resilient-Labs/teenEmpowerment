@@ -1,0 +1,458 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Elements
+# Header
+# Home
+# Blog-home
+# Blog-page
+# Contact-section
+# Content-Section
+# Donate
+# Footer    
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+
+}
+
+section {
+    width: 100%;
+}
+
+button:focus {
+    outline:0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+.inner-container{
+    width: 83.333333%;
+    float: left;
+    margin:0 auto;
+    padding: 20px 0;
+}
+.flexbox-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.TE-button {
+    border-radius: 30px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: .8em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.padder {
+    padding: 85px 0px 0 70px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    background-color: #CCC;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    color: #FFF;
+    width: 83.33333%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+.home-header-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home-pitch-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: green;
+}
+
+.home-pitch-container h2 {
+    font-size: 1.6em;
+    font-weight: lighter;
+}
+
+.home-pitch-header {
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+## Hero-image
+--------------------------------------------------------------*/
+
+.hero-image h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hero-image p{
+    font-size: 25px;
+}
+
+.hero-image{
+    height: 400px;
+    background-size: cover;
+    background: url("http://canleyheightsrsl.com.au/wp-content/uploads/2013/12/placeholder.jpg") center;
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------
+# Blog-home
+--------------------------------------------------------------*/
+.blog-row {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-container {
+    width: 33%;
+    padding: 5px 0;
+}
+
+.blog-img-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.blog-info {
+    width: 100%;
+    background-color: #fff;
+}
+
+.blog-title {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-description {
+    padding: 0 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.blog-button {
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: .8em;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.show-more-button {
+    margin: 0 auto;
+}
+
+.TE-color {
+    background-color: #abc;
+}
+
+.TE-white {
+    background-color: #fff;
+}
+
+.TE-gray {
+    background-color: #eee;
+}
+
+#showMore {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin: 0 auto;
+    font-size: .8em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 120px) and (max-width: 480px) {
+    .blog-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+    .blog-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+/*--------------------------------------------------------------
+# Blog-page
+--------------------------------------------------------------*/
+.blog-page-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.blog-page-container h2 {
+    margin: 5px 0;
+    font-size: 3em;
+}
+
+.author {
+    margin: 5px 0;
+}
+
+.blog-page-text {
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+
+.sm-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+}
+
+.sm-img {
+    width: 49%;
+    overflow: hidden;
+}
+
+.lg-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.lg-img {
+    width: 49%;
+    overflow: hidden;
+}
+
+.blog-page-button {
+    border: 0;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1em;
+}
+
+@media (min-width: 0px) and (max-width: 480px)  {
+    .blog-page-container {
+        width: 100%;
+    }
+
+    .sm-img-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sm-img {
+        width: 100%;
+    }
+
+    .lg-img-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .lg-img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 980px)  {
+    .blog-page-container {
+        width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Contact-section
+--------------------------------------------------------------*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact-header {
+    font-size: 2.2em;
+    font-weight: lighter;
+}
+
+.contact-container div  {
+    width: 23%;
+}
+
+.contact-text-header {
+    font-size: 1.6em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact-container div p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contact-button {
+    border: 0;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1em;
+}
+/*--------------------------------------------------------------
+# Content-section
+--------------------------------------------------------------*/
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-info-container {
+    width: 49%;
+}
+
+.content-title {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.content-info-container h3 {
+    font-size: 1.6em;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.content-info-container p {
+    font-size: 1.2em;
+}
+
+/*--------------------------------------------------------------
+# Donate
+--------------------------------------------------------------*/
+.flex-box {
+    display: flex;
+    width: 100%;
+}
+
+.donate-container {
+    width: 50%;
+}
+
+.donate-container h3 {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.donate-container p {
+}
+
+.donate-info {  
+    margin: 5px 0;
+}
+
+.donate-text-area {
+    width: 60%;
+}
+
+.short-text-area {
+    float: left;
+    width: 10%;
+}
+
+.name {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+.organization {
+    width: 30%;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-text{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
